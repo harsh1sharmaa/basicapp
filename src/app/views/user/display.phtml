@@ -1,0 +1,18 @@
+
+<?php echo $this->tag->form("signup/register"); ?>
+
+<p>
+    <label for="name">Name</label>
+    <?php echo $this->tag->textField(["name",$data['name']]); ?>
+</p>
+
+<p>
+    <label for="email">E-Mail</label>
+    <?php echo $this->tag->textField(["email",$data['email']]); ?>
+</p>
+
+<p>
+    <?php echo $this->tag->submitButton("update"); ?>
+</p>
+
+</form>
